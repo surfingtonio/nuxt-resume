@@ -1,12 +1,16 @@
 <template>
   <div class="certificate">
     <h3 class="certificate__title">{{ title }}</h3>
-    <a :href="url" target="_blank" class="url url--external certificate__url">{{ url }}</a>
+    <a :href="url" target="_blank" class="url url--external certificate__url">{{
+      url
+    }}</a>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: "Certificate",
   props: {
     title: {
@@ -18,5 +22,5 @@ export default {
       required: true,
     },
   },
-};
+});
 </script>

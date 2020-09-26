@@ -5,8 +5,10 @@
   </section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: "Section",
   props: {
     title: {
@@ -15,11 +17,12 @@ export default {
     },
   },
   computed: {
-    defaultClassNames: function () {
-      let words =
+    defaultClassNames: function (): string {
+      let words: Array<string> =
         this.title === undefined ? [] : this.title.toLowerCase().split(/\s/);
       return words.join("-");
+      return "section";
     },
   },
-};
+});
 </script>

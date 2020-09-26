@@ -31,30 +31,32 @@
   </Section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: "Header",
   props: {
     fullname: {
       type: String,
-      required: true
+      required: true,
     },
     location: {
       type: Object,
-      required: true
+      required: true,
     },
     phone: {
       type: Object,
-      required: true
+      required: true,
     },
     email: {
       type: Object,
-      required: true
+      required: true,
     },
     linkedIn: {
       type: Object,
-      required: false
-    }
-  }
-};
+      required: false,
+    },
+  },
+});
 </script>

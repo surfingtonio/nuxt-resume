@@ -8,8 +8,10 @@
   </Section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: "Footer",
   props: {
     info: {
@@ -17,5 +19,5 @@ export default {
       required: false,
     },
   },
-};
+});
 </script>
