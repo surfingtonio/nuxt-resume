@@ -4,11 +4,16 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "nuxt-resume",
+    title: "Marc's Resume",
     meta: [
       { charset: "utf-8" },
+      { name: "referrer", content: "no-referrer" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content: "Marc Danting's resume created with Nuxt.js and Typescript."
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -27,6 +32,10 @@ export default {
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build"
   ],
+
+  router: {
+    base: "/resume/"
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -49,5 +58,12 @@ export default {
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {
+    extend(config, { isDev, isClient }) {
+      if (!isDev) {
+        config.output.publicPath = "./_nuxt/";
+      }
+      return config;
+    }
+  }
 };
