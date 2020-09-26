@@ -19,14 +19,14 @@
       "url": "https://www.linkedin.com/in/surfingtonio/"
     }
   },
-  "careerSummary": "I am an accomplished professional with 5 years experience in customer service and more than 10 years of programming experience in PHP, C# and various Javascript frameworks.",
+  "summary": "I am an accomplished professional with 5 years experience in customer service and more than 10 years of programming experience in PHP, C# and various Javascript frameworks.",
   "expertise": [
     "Web programming",
     "Server administration",
     "Graphic design",
     "Customer service"
   ],
-  "workExperiences": [
+  "professions": [
     {
       "title": "Programmer Analyst",
       "company": "Vancouver Island Health Authority",
@@ -99,10 +99,10 @@
     }
   ],
   "skills": [
-    "HTML, CSS, PHP, MySQL, Javascript",
+    "HTML, CSS, PHP, MySQL, Javascript, Typescript",
     "Laravel, CodeIgniter",
     "C#, .NET Core",
-    "Alpinejs, Sveltejs, Vuejs, Reactjs, Angularjs, Meteorjs, jQuery, Mootools",
+    "Nuxt.js, Alpine.js, Svelte.js, Vue.js, React.js, Angular.js, Meteor.js, jQuery, Mootools",
     "Bootstrap, Scss, PostCss",
     "Wordpress, Drupal, Smarty",
     "Vagrant, Virtualbox, Puphpet",

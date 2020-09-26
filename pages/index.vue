@@ -2,16 +2,12 @@
   <Page v-if="data">
     <Header v-bind="data.info" />
 
-    <Section title="Career Summary" v-if="data.careerSummary">
-      <p>{{ data.careerSummary }}</p>
+    <Section title="Career Summary" v-if="data.summary">
+      <p>{{ data.summary }}</p>
     </Section>
 
-    <Section title="Employment History" v-if="data.workExperiences">
-      <Work
-        v-for="work in data.workExperiences"
-        :key="work.title"
-        v-bind="work"
-      />
+    <Section title="Employment History" v-if="data.professions">
+      <Work v-for="work in data.professions" :key="work.title" v-bind="work" />
     </Section>
 
     <Section title="Technical Skills" v-if="data.skills">
