@@ -1,0 +1,171 @@
+{
+  "lastUpdate": "Last update 2020-09-20",
+  "info": {
+    "fullname": "Marc Anthony Danting",
+    "location": {
+      "title": "Nanaimo, BC, Canada",
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=49.165674,-123.936427"
+    },
+    "phone": {
+      "title": "250.740.1820",
+      "url": "tel:2507401820"
+    },
+    "email": {
+      "title": "marc@danting.ca",
+      "url": "mailto:marc@danting.ca"
+    },
+    "linkedIn": {
+      "title": "https://www.linkedin.com/in/surfingtonio/",
+      "url": "https://www.linkedin.com/in/surfingtonio/"
+    }
+  },
+  "careerSummary": "I am an accomplished professional with 5 years experience in customer service and more than 10 years of programming experience in PHP, C# and various Javascript frameworks.",
+  "expertise": [
+    "Web programming",
+    "Server administration",
+    "Graphic design",
+    "Customer service"
+  ],
+  "workExperiences": [
+    {
+      "title": "Programmer Analyst",
+      "company": "Vancouver Island Health Authority",
+      "url": "https://www.islandhealth.ca",
+      "term": {
+        "start": "2018-10-15"
+      },
+      "details": "Worked with Northern Health Authority programmers to port an existing contract management software to .NET Core. Some of my responsibilities and contribution during the project include:",
+      "items": [
+        "Implemented software features and CRUD functionality",
+        "Built custom software solutions",
+        "Fixed countless bugs and resolved software issues",
+        "Applied Island Health CSS using Gulp and PostCSS",
+        "Implement code-first migrations",
+        "Provided mentoring to colleagues and shared coding best practices",
+        "Promoted proper tagging of commits to link them with TFS tickets",
+        "Improved team's Git workflow",
+        "Weekly site deployment on Island Health"
+      ]
+    },
+    {
+      "title": "Senior Web Programmer",
+      "company": "Music Teacher’s Helper",
+      "url": "https://musicteachershelper.com",
+      "term": {
+        "start": "2011-05-01",
+        "end": "2017-05-24"
+      },
+      "items": [
+        "Integrated Paypal and Stripe on SaaS billing system",
+        "Ported PHP calendar to Javascript",
+        "Applied premium themes to custom studio website templating system",
+        "Updated invoicing system",
+        "Migrated Saas email notifications to MailChimp and Mandrill",
+        "Updated Manager reporting tools",
+        "Switched development environments to Vagrant",
+        "Migrated company repositories to Bitbucket and improved Development Team's Git workflow"
+      ]
+    },
+    {
+      "title": "Freelance Web Developer",
+      "company": "Freelancer.com - Formerly RentACoder.com",
+      "url": "https://www.freelancer.ca/u/surfingtonio",
+      "term": {
+        "start": "2006-07-01",
+        "end": "2015-12-01"
+      },
+      "items": [
+        "Converted PSD layouts to pixel-perfect HTML/CSS",
+        "Built custom scripting solutions for clients",
+        "Completed photo restoration and graphic editing projects using Photoshop",
+        "Fixed various web-related projects on Freelancer.com"
+      ]
+    },
+    {
+      "title": "Customer Service Representative",
+      "company": "AOL Member Services",
+      "url": "https://www.aol.com",
+      "term": {
+        "start": "2001-02-01",
+        "end": "2006-07-01"
+      },
+      "items": [
+        "Provided prompt and friendly response to member inquiries through chat and email",
+        "Managed a high-volume workload within a deadline-driven environment",
+        "Consistently met company performance benchmarks in all areas (knowledge, courtesy, transaction length)",
+        "Received several commendations such as \"Employee of the month\" and \"Perfect attendance\" on multiple occasions",
+        "Completed voluntary customer service trainings to learn ways to enhance customer satisfaction and improve productivity"
+      ]
+    }
+  ],
+  "skills": [
+    "HTML, CSS, PHP, MySQL, Javascript",
+    "Laravel, CodeIgniter",
+    "C#, .NET Core",
+    "Alpinejs, Sveltejs, Vuejs, Reactjs, Angularjs, Meteorjs, jQuery, Mootools",
+    "Bootstrap, Scss, PostCss",
+    "Wordpress, Drupal, Smarty",
+    "Vagrant, Virtualbox, Puphpet",
+    "Git, Bitbucket, Github",
+    "Node.js, Npm, Gulp, Composer, Webpack",
+    "Stripe, Paypal, Authorize.net, Mailchimp, Mandrill, Google API",
+    "Microsoft Office, Photoshop"
+  ],
+  "schools": [
+    {
+      "course": "Bachelor of Science in Computer Science",
+      "name": "Angeles University Foundation",
+      "url": "https://www.auf.edu.ph",
+      "term": {
+        "start": "1996-06-01",
+        "end": "2000-04-01"
+      }
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Svelte.js – The Complete Guide (incl. Sapper.js)",
+      "url": "https://bit.ly/2JaK9eZ"
+    },
+    {
+      "title": "Entity Framework in Depth: The Complete Guide",
+      "url": "https://bit.ly/3afid5x"
+    },
+    {
+      "title": "Mastering LINQ with C# and .NET",
+      "url": "https://bit.ly/2Jg1cw5"
+    },
+    {
+      "title": "C# Advanced Topics: Prepare for Technical Interviews",
+      "url": "https://bit.ly/2QFQNOB"
+    },
+    {
+      "title": "The Complete ASP.NET MVC 5 Course",
+      "url": "https://bit.ly/39d1e2G"
+    },
+    {
+      "title": "C# Basics for Beginners: Learn C# Fundamentals by Coding",
+      "url": "https://bit.ly/2Uwi8nt"
+    },
+    {
+      "title": "C# Intermediate: Classes, Interfaces and OOP",
+      "url": "https://bit.ly/3bn9WNe"
+    },
+    {
+      "title": "Laravel 2019, the complete guide with real world projects",
+      "url": "https://bit.ly/2Je7ZGA"
+    },
+    {
+      "title": "Vue JS 2 – The Complete Guide (incl. Vue Router & Vuex)",
+      "url": "https://bit.ly/3al0k5C"
+    },
+    {
+      "title": "Essentials in JavaScript ES6 – A Fun and Clear Introduction",
+      "url": "https://bit.ly/2wnKicr"
+    },
+    {
+      "title": "Git a Web Developer Job: Mastering the Modern Workflow",
+      "url": "https://bit.ly/2y53rQL"
+    }
+  ]
+}

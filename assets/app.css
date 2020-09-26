@@ -1,0 +1,214 @@
+:root {
+  --background-color: #444;
+  --black: #000;
+  --grey: #aaa;
+  --paper-white: #fbfbf8;
+  --text-color: #273849;
+  --vue-primary-color: #42b983;
+  --white: #fff;
+}
+
+html,
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.3;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.page {
+  background: var(--paper-white);
+  box-shadow: 0 3px 5px #000;
+  font-size: 12pt;
+  margin: 0 auto;
+  padding: 6rem;
+  position: relative;
+  width: 39rem;
+}
+
+.icon {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  color: #555;
+}
+.icon--action-button {
+  margin: 0;
+}
+
+.url {
+  color: var(--vue-primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+.url:hover {
+  text-decoration: underline;
+}
+.url--external {
+}
+
+.generic-list {
+  margin: 1rem 0 0;
+  padding: 0 2rem;
+  width: calc(100% - 4rem);
+}
+.generic-list__item {
+}
+
+.section {
+  margin: 2rem 0;
+}
+.section:last-child {
+  margin-bottom: 0;
+}
+.section__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.section--header {
+  margin-top: 0;
+  text-align: center;
+}
+.section--header .section__title {
+  border-bottom: 1px solid var(--grey);
+  font-size: 2.2rem;
+  padding: 0 0 1rem;
+  margin: 0 0 1rem;
+}
+
+.header {
+}
+.header__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.header__item {
+  align-items: center;
+  display: flex;
+  margin: 0 1rem 0 0;
+}
+
+.work,
+.school,
+.certificate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.work:last-child,
+.school:last-child,
+.certificate:last-child {
+  margin-bottom: 0;
+}
+
+.work__title,
+.school__course,
+.certificate__title {
+  flex: 1 0 78%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  order: -1;
+}
+
+.work__company,
+.school__name {
+  flex: 1 0 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.work__term,
+.school__term {
+  align-items: center;
+  background: var(--vue-primary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 5px #aaa;
+  color: var(--paper-white);
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  order: -1;
+  padding: 0 0.75rem;
+}
+
+.work {
+}
+.work__title {
+}
+.work__company {
+}
+.work__url {
+}
+.work__term {
+}
+.work__details {
+  flex: 1 0 100%;
+  margin: 1rem 0 0;
+}
+
+.school {
+}
+.school__course {
+}
+.school__name {
+}
+.school__url {
+}
+.school__term {
+}
+
+.certificates {
+}
+.certificate {
+  flex-direction: column;
+}
+.certificate__title {
+  flex: 1 0 100%;
+  order: 0;
+}
+.certificate__url {
+}
+
+.section--footer {
+}
+.footer {
+  align-items: center;
+  border-top: 1px solid var(--grey);
+  color: var(--grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0 0;
+  transform: translateY(100%);
+}
+.footer__url {
+}
+.footer__item {
+}
+.footer__item--info {
+}
+
+.action-button {
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0 0 0 1px var(--background-color);
+  bottom: 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.25rem;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+  position: fixed;
+  right: 3rem;
+  z-index: 1;
+}

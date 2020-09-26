@@ -1,0 +1,86 @@
+@media screen and (max-width: 960px) {
+  html,
+  body {
+    background: var(--white);
+    margin: 2rem;
+    padding: 0;
+  }
+
+  .page {
+    background: var(--white);
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .action-button {
+    box-shadow: 2px 2px 4px 0 #777;
+    right: 2rem;
+    bottom: 4rem;
+  }
+
+  .action-button,
+  .action-button:hover .icon,
+  .phone:hover .icon--phone,
+  .email:hover .icon--email,
+  .location:hover .icon--location,
+  .linked-in:hover .icon--linked-in {
+    color: #555;
+    animation: none;
+  }
+
+  .work,
+  .school,
+  .certificate {
+    display: block;
+  }
+
+  .work__term,
+  .school__term {
+    box-shadow: none;
+    display: table;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  html,
+  body {
+    margin: 1rem;
+  }
+
+  .page {
+    font-size: 1rem;
+  }
+
+  .url {
+    font-weight: 400;
+  }
+
+  .header__items {
+    display: block;
+    padding: 0;
+  }
+
+  .footer {
+    padding: 1rem 0 2rem;
+  }
+
+  .section__title {
+    font-size: 1.4rem;
+  }
+  .section--header .section__title {
+    font-size: 2rem;
+  }
+
+  .work__title,
+  .school__course,
+  .certificate__title {
+    font-size: 1.1rem;
+  }
+
+  .work__company,
+  .school__name {
+    font-size: 1rem;
+  }
+}

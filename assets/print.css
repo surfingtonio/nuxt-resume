@@ -1,0 +1,75 @@
+@media print {
+  html,
+  body {
+    background: var(--white);
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    background: var(--white);
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .url {
+    break-after: auto;
+    break-before: avoid;
+    font-weight: 400;
+  }
+
+  .generic-list {
+  }
+  .generic-list__item {
+    break-inside: avoid;
+  }
+
+  .section {
+  }
+  .section:nth-last-child(2) {
+    margin: 0;
+  }
+  .section__title {
+    break-after: avoid;
+    break-before: auto;
+  }
+
+  .header .url {
+    color: var(--black);
+    font-weight: 400;
+  }
+  .linked-in .url {
+    color: var(--vue-primary-color);
+  }
+
+  .work__term {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .school {
+    break-inside: avoid;
+  }
+
+  .school__term {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .certificate {
+    break-inside: avoid;
+  }
+
+  .footer,
+  .action-button {
+    display: none;
+  }
+
+  @page {
+    size: letter;
+    margin: 1in;
+  }
+}
