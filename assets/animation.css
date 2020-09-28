@@ -1,31 +1,63 @@
 @media screen {
   .phone:hover .icon--phone {
-    animation: phone-ring 1s ease-in-out;
+    animation: phone-ring 1s ease-in;
   }
 
   .email:hover .icon--email,
   .location:hover .icon--location,
   .linked-in:hover .icon--linked-in {
-    color: #0073b1;
     animation: jello-vertical 0.9s both;
   }
+
+  .phone:hover .icon--phone {
+    color: var(--black);
+  }
+
+  .email:hover .icon--email {
+    color: var(--outlook-blue);
+  }
+
   .location:hover .icon--location {
-    color: #c53c3c;
+    color: var(--google-red);
+  }
+
+  .linked-in:hover .icon--linked-in {
+    color: var(--linked-in-blue);
   }
 
   .action-button {
-    animation: jello-horizontal 1s both;
+    animation: show 0.3s both;
   }
 
-  .action-button:hover {
+  .action-button--show {
+    animation: show 0.3s both;
   }
 
-  .action-button:hover .icon {
-    color: var(--vue-primary-color);
-    transition: all 0.4s;
+  .action-button--hide {
+    animation: hide 0.3s both;
   }
 
-  @keyframes slide-in {
+  .action-button:first-child {
+    animation-delay: 0.03s;
+  }
+
+  .work__term,
+  .school__term {
+    transition: all 0.1s;
+  }
+
+  .work__term:hover,
+  .school__term:hover {
+    transform: scale(1.1) translateY(-1%);
+    box-shadow: 0 3px 5px 1px var(--shadow-grey);
+  }
+
+  .action-button:hover .icon--action-button {
+    color: var(--red);
+    transition: all 0.1s;
+  }
+
+  @keyframes show {
     0% {
       opacity: 0;
       transform: translateX(7rem);
@@ -36,12 +68,25 @@
     }
   }
 
-  @keyframes scale-up {
+  @keyframes hide {
     0% {
-      transform: scale(1, 1);
+      opacity: 1;
+      transform: translateX(0);
     }
     100% {
-      transform: scale(1.1, 1.1);
+      opacity: 0;
+      transform: translateX(7rem);
+    }
+  }
+
+  @keyframes scale-up {
+    0% {
+      transform: scale(1) translateY(0);
+      box-shadow: 0 3px 5px 1px var(--shadow-grey);
+    }
+    100% {
+      transform: scale(1.2) translateY(-1%);
+      box-shadow: 0 3px 5px 1px var(--shadow-grey);
     }
   }
 
@@ -63,30 +108,6 @@
     }
     75% {
       transform: scale3d(0.95, 1.05, 1);
-    }
-    100% {
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-  @keyframes jello-horizontal {
-    0% {
-      transform: scale3d(1, 1, 1);
-    }
-    30% {
-      transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-      transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-      transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-      transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      transform: scale3d(1.05, 0.95, 1);
     }
     100% {
       transform: scale3d(1, 1, 1);

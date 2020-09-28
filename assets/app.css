@@ -1,11 +1,20 @@
 :root {
+  --primary-color: #0073b1;
   --background-color: #444;
-  --black: #000;
-  --grey: #aaa;
-  --paper-white: #fbfbf8;
   --text-color: #273849;
-  --vue-primary-color: #42b983;
+  --black: #000;
+  --shadow-grey: #777;
+  --grey: #aaa;
   --white: #fff;
+  --red: #f33;
+  --stackoverflow-orange: #f48024;
+  --phone-green: #4cda64;
+  --outlook-blue: #0078d4;
+  --linked-in-blue: #0073b1;
+  --google-red: #ea4335;
+  --nuxt-green: #00c58e;
+  --vue-green: #42b983;
+  --adobe-red: #e00f00;
 }
 
 html,
@@ -27,6 +36,7 @@ body {
   padding: 6rem;
   position: relative;
   width: 39rem;
+  transition: all 0.3s;
 }
 
 .icon {
@@ -96,6 +106,7 @@ body {
 .work,
 .school,
 .certificate {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -131,7 +142,7 @@ body {
   align-items: center;
   background: var(--vue-primary-color);
   border-radius: 0.5rem;
-  box-shadow: 0 3px 5px #aaa;
+  box-shadow: 2px 2px 4px 0 var(--background-color);
   color: var(--paper-white);
   display: flex;
   font-size: 1rem;
