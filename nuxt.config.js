@@ -46,7 +46,13 @@ export default {
         imports: [
           {
             set: "@fortawesome/free-solid-svg-icons",
-            icons: ["faEnvelope", "faPhoneAlt", "faPrint", "faMapMarkerAlt"]
+            icons: [
+              "faEnvelope",
+              "faPhoneAlt",
+              "faPrint",
+              "faMapMarkerAlt",
+              "faFilePdf"
+            ]
           },
           {
             set: "@fortawesome/free-brands-svg-icons",

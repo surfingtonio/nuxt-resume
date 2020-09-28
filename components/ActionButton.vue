@@ -1,6 +1,6 @@
 <template>
-  <div class="action-button action-button--show" @click="handleClick">
-    <fa :icon="['fas', 'print']" class="icon icon--action-button" />
+  <div class="action-button action-button--show" @click="action" :title="title">
+    <fa :icon="icon" class="icon icon--action-button" />
   </div>
 </template>
 
@@ -9,9 +9,18 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "ActionButton",
-  methods: {
-    handleClick() {
-      window.print();
+  props: {
+    icon: {
+      type: Array,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    action: {
+      type: Function,
+      required: true,
     },
   },
 });
