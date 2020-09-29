@@ -1,4 +1,4 @@
-@media screen {
+@media screen and (min-width: 541px) {
   .phone:hover .icon--phone {
     animation: phone-ring 1s ease-in;
   }
@@ -54,7 +54,6 @@
 
   .action-button:hover .icon--action-button {
     color: var(--red);
-    transition: all 0.1s;
   }
 
   @keyframes show {

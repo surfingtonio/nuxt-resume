@@ -14,10 +14,14 @@
     width: auto;
   }
 
-  .action-button {
-    box-shadow: 2px 2px 4px 0 #777;
+  .action-buttons {
     right: 2rem;
-    bottom: 4rem;
+    bottom: 2rem;
+  }
+
+  .action-button {
+    height: 3.25rem;
+    width: 3.25rem;
   }
 
   .action-button,
@@ -26,7 +30,6 @@
   .email:hover .icon--email,
   .location:hover .icon--location,
   .linked-in:hover .icon--linked-in {
-    color: #555;
     animation: none;
   }
 
@@ -51,6 +54,16 @@
 
   .page {
     font-size: 1rem;
+  }
+
+  .action-buttons {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .action-button {
+    height: 3.5rem;
+    width: 3.5rem;
   }
 
   .url {

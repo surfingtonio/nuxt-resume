@@ -21,28 +21,21 @@
     font-weight: 400;
   }
 
-  .generic-list {
-  }
   .generic-list__item {
     break-inside: avoid;
   }
 
-  .section {
-  }
   .section:nth-last-child(2) {
     margin: 0;
   }
+
   .section__title {
     break-after: avoid;
     break-before: auto;
   }
 
-  .header .url {
-    color: var(--black);
-    font-weight: 400;
-  }
   .linked-in .url {
-    color: var(--vue-primary-color);
+    color: var(--primary-color);
   }
 
   .work__term {
