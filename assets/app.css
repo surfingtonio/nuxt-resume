@@ -159,8 +159,7 @@ body {
 }
 
 .certificate__title {
-  flex: 1 0 100%;
-  order: 0;
+  flex: none;
 }
 
 .footer {
