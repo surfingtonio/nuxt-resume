@@ -68,6 +68,7 @@ export default Vue.extend({
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 @import url("assets/app.css");
 @import url("assets/responsive.css");
 @import url("assets/animation.css");
