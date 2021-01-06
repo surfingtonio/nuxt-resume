@@ -6,23 +6,23 @@ export default {
   head: {
     title: "Marc's Resume",
     meta: [
-      { charset: "utf-8" },
-      { name: "referrer", content: "no-referrer" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'referrer', content: 'no-referrer' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: "Marc Danting's resume created with Nuxt.js and Typescript."
-      }
+        hid: 'description',
+        name: 'description',
+        content: "Marc Danting's resume created with Nuxt.js and Typescript.",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -30,46 +30,46 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    "@nuxt/typescript-build"
+    '@nuxt/typescript-build',
   ],
 
   router: {
-    base: "/resume/"
+    base: '/resume/',
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     [
-      "nuxt-fontawesome",
+      'nuxt-fontawesome',
       {
-        component: "fa",
+        component: 'fa',
         imports: [
           {
-            set: "@fortawesome/free-solid-svg-icons",
+            set: '@fortawesome/free-solid-svg-icons',
             icons: [
-              "faEnvelope",
-              "faPhoneAlt",
-              "faPrint",
-              "faMapMarkerAlt",
-              "faFilePdf"
-            ]
+              'faEnvelope',
+              'faPhoneAlt',
+              'faPrint',
+              'faMapMarkerAlt',
+              'faFilePdf',
+            ],
           },
           {
-            set: "@fortawesome/free-brands-svg-icons",
-            icons: ["faLinkedin"]
-          }
-        ]
-      }
-    ]
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['faLinkedin'],
+          },
+        ],
+      },
+    ],
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extend(config, { isDev, isClient }) {
       if (!isDev) {
-        config.output.publicPath = "./_nuxt/";
+        config.output.publicPath = './_nuxt/';
       }
       return config;
-    }
-  }
+    },
+  },
 };
