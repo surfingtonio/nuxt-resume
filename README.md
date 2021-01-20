@@ -1,5 +1,7 @@
 # nuxt-resume
 
+![Node.js CI/CD](https://github.com/surfingtonio/nuxt-resume/workflows/Node.js%20CI/CD/badge.svg?branch=master)
+
 ## Build Setup
 
 ```bash
